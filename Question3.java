@@ -11,6 +11,10 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
+    //System.out.print("Enter an integer: ");
+    int input = in.nextInt();
+    int result =  input * input;
+    System.out.println(result);
     
   }
 }
