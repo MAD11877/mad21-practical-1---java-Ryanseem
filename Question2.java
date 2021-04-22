@@ -17,6 +17,6 @@ public class Question2
     double weight = in.nextDouble();
     //System.out.println("Calculating user BMI");
     double bmi = weight / (height* height);
-    //System.out.print("The BMI of the user is " + bmi + "kg/m2");
+    System.out.print(bmi);
   }
 }
