@@ -14,7 +14,7 @@ public class Question3
     System.out.print("Enter an integer: ");
     int input = in.nextInt();
     int result =  input * input;
-    System.out.println("The result of integer given multiplies itself is: " + result);
+    System.out.println(result);
     
   }
 }
