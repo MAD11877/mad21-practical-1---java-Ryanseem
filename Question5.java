@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Question5
 {
@@ -25,8 +26,37 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
-    Scanner in = new Scanner(System.in);
     
+
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    int[] a = new int[n];
+    
+
+    for(int i=0;i<n;i++) 
+    {
+      a[i]=in.nextInt();
+    }
+    
+    int m = 1;
+    int mode = 0;
+    for(int i=0;i<n;i++) 
+    {
+      int count = 0;
+      for(int t=0;t<n;t++)
+      {
+        if(a[i] == a[t])
+        {
+          count++;
+        }
+      }
+      if(count>m)
+      {
+        m = count;
+        mode = a[i];
+      }
+    }
+    System.out.println(mode);
+
   }
 }
